@@ -1,6 +1,15 @@
 #Ruby Challenges
 
-Fork and clone this repo, and complete each challenge in a separate file.
+##Getting Started
+
+* Fork and clone this repository
+* Run `bundle install` to install dependencies
+  * Run `rubocop` to lint your code
+  * Run `ruby src/file_name.rb` to run your file
+
+##Requirements
+
+Complete each challenge in a separate file.
 
 ### Challenge 1 - Calculator
 
