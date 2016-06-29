@@ -5,7 +5,7 @@
 * Fork and clone this repository
 * Run `bundle install` to install dependencies
   * Run `rubocop` to lint your code
-  * Run `ruby src/file_name.rb` to run your file
+  * Run `ruby lib/file_name.rb` to run your file
 
 ##Requirements
 
