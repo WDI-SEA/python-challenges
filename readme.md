@@ -1,11 +1,9 @@
-#Ruby Challenges
+#Python Challenges
 
 ##Getting Started
 
 * Fork and clone this repository
-* Run `bundle install` to install dependencies
-  * Run `rubocop` to lint your code
-  * Run `ruby lib/file_name.rb` to run your file
+* Run `python3 challenges/file_name.py` to run your file
 
 ##Requirements
 
@@ -13,7 +11,10 @@ Complete each challenge in a separate file.
 
 ### Challenge 1 - Calculator
 
-Create a simple calculator that first asks the user what method they would like to use (addition, subtraction, multiplication, division) and then asks the user for two numbers, returning the result of the method with the two numbers. Here is a sample prompt:
+Create a simple calculator that first asks the user what method they would like
+to use (addition, subtraction, multiplication, division) and then asks the user
+for two numbers, returning the result of the method with the two numbers. Here
+is a sample prompt:
 
 ```
 What calculation would you like to do? (add, sub, mult, div)
@@ -26,8 +27,12 @@ Your result is 9
 ```
 
 ### Challenge 2 - Reverse a string
+Reverse a string manually. Don't use s[::-1] (even though that's awesome).
+Create a new variable storing an empty string and add the letters from
+the first string one by one. The for loop should iterate over the length
+of the string and you should access letters individually.
 
-Reverse a string in place. In other words, do not create a new string or use other methods on the string such as `reverse`. The goal of the problem is to use a loop and the string accessors to figure out which values to swap for other values. Below is some sample output.
+Below is some sample output.
 
 ```
 Enter a string:
@@ -36,8 +41,21 @@ em_esrever
 ```
 
 ### Challenge 3 - Bank Transactions
+Create a prompt that asks the user if they would like to display their balance,
+withdraw or deposit. Write three methods to perform these calculations and
+output the result to the user.
 
-Create a prompt that asks the user if they would like to display their balance, withdraw or deposit. Write three methods to perform these calculations and output the result to the user. Here is a sample output:
+Gather user input using the `input` function. Note that input always returns
+user input as a string. You have to manually convert it to an int or a float
+to make it behave like number. Also, end the input prompt with a \n newline
+character if you want the user to type in on the next line.
+
+```
+age = input("How old are you?\n")
+age = int(age)
+```
+
+Here is a sample output:
 
 ```
 Your current balance is
@@ -54,7 +72,12 @@ Thank you!
 
 ### Challenge 4 - Guessing Game
 
-Create a program that asks the user to guess a number between 1 and 100. Once the user guesses a number, the program should say, higher, lower, or tell the user that he got the number correct.  The user should continue to make guesses until he guesses correctly. Also, once the user guesses correctly, the program should print the number of guesses needed to arrive at the correct answer. Below is sample output:
+Create a program that asks the user to guess a number between 1 and 100. Once
+the user guesses a number, the program should say, higher, lower, or tell the
+user that he got the number correct.  The user should continue to make guesses
+until he guesses correctly. Also, once the user guesses correctly, the program
+should print the number of guesses needed to arrive at the correct answer.
+Below is sample output:
 
 ```
 Guess a number between 1 and 100
