@@ -1,8 +1,4 @@
-user_choice = input("What would you like to do?\n")
-
-if (user_choice == "nap"):
-  print("zzz")
-elif (user_choice == "eat"):
-  print("nom nom nom.")
-else:
-  print("huh. I'm not sure what to make of that.")
+# Use the `input()` function to prompt a user to enter something.
+# input() always returns a string value. If you ever want someone
+# to enter a number you have to use the `int()` function to convert
+# what they typed in to a string.
