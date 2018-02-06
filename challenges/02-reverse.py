@@ -6,3 +6,16 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+
+def reverseMe():
+	forwards = input("what do you want to reverse?: \n")
+	reversedString = ''
+
+	for x in forwards:
+		reversedString = x+reversedString
+	print(reversedString)
+
+reverseMe()
+
+	
