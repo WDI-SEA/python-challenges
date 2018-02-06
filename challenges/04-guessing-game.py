@@ -1,7 +1,21 @@
-from random import randint
+import random
 
-MIN = 1
-MAX = 5
+attempts = 10
+guess_number = random.randint(1,100)
 
-print("Guess a number between %d and %d" % (MIN, MAX))
-print("Delete me. Here's a random number:", randint(MIN, MAX))
+for attempt in range(attempts):
+    guess - int(input('take a guess: '))
+
+    if guess < secret_number:
+        print('higher...')
+    elif guess > guess_number:
+        print('lower...')
+    else:
+        print('you guessed it the number is', guess_number)
+        print('number of guesses', attempts, 'attempts')
+
+if guess != guess_number:
+print()
+print('sorry max tries reached')
+print('the number was', guess_number)
+
