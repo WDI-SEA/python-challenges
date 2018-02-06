@@ -6,3 +6,15 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+print('Enter a string:')
+word = input()
+word_reverse = list(word)
+for i in range(len(word) // 2):
+  tmp = word_reverse[i]
+  word_reverse[i] = word_reverse[len(word) - i - 1]
+  word_reverse[len(word) - i - 1] = tmp
+
+
+print('this was string', word)
+print('this was string2', ''.join(word_reverse))
