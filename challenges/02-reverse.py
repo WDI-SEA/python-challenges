@@ -17,3 +17,12 @@
 
 operation = input('''Enter a string: ''')
 print(operation[::-1])
+
+initial_string = input("Type a sentence!")
+new_array = []
+
+for i in range(0, len(initial_string)):
+	new_array.insert(0, initial_string[i])
+
+reverse_string = ''.join(new_array)
+print(reverse_string)
