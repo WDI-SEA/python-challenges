@@ -30,11 +30,3 @@ def calculator():
 		calculator();
 
 print(calculator())
-
-# What calculation would you like to do? (add, sub, mult, div)
-# add
-# What is number 1?
-# 3
-# What is number 2?
-# 6
-# Your result is 9
