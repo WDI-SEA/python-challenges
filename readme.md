@@ -1,11 +1,11 @@
-#Python Challenges
+# Python Challenges
 
-##Getting Started
+## Getting Started
 
 * Fork and clone this repository
 * Run `python3 challenges/file_name.py` to run your file
 
-##Requirements
+## Requirements
 
 Complete each challenge in a separate file.
 
