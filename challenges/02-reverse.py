@@ -6,3 +6,12 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+def reverseStr():
+	forward = input("Enter a string:\n")
+	backward = ''
+	for char in reversed(forward):
+		backward += char
+	return backward
+
+print(reverseStr())
