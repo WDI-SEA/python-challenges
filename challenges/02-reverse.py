@@ -5,4 +5,13 @@
 # This website of 30 Python Tips and Tricks also happens to point out
 # several ways to reverse a string, and it's a good read!
 #
-# http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+
+string = input("What would you like to reverse today: ")
+
+def reverse_it(words):
+  to_reverse = list(words)
+  to_reverse.reverse()
+  print(''.join(to_reverse))
+
+reverse_it(string)
