@@ -32,4 +32,4 @@ elif method == 'mult':
 elif method == 'div':
    print(x,"/",y,"=", div(x,y))
 else:
-   print("Invalid input")
+   print("Invalid input")g
