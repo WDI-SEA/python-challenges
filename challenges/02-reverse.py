@@ -6,3 +6,17 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+
+def reverse(string):
+  i = len(string)
+
+  word = list
+  for i in range(i-1, -1, -1):
+    print(string[i])
+    l = string[i]
+    ls = list(l)
+    ls.pop()
+  print(word)
+
+reverse('stuff')
