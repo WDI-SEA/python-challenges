@@ -15,5 +15,5 @@ while transaction != 'exit':
     elif transaction == 'check_balance':
         print('Your current balance is ${}\n'.format(current_balance))
     print('--------------------------------------------')
-        
+
 print("Have a nice day!")

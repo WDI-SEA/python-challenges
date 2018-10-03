@@ -3,7 +3,10 @@
 # to enter a number you have to use the `int()` function to convert
 # what they typed in to a string.
 
-operation = input('What calculation would you like to do? (add, sub, mult, div)\n')
+operation =''
+
+while operation not in ['add','sub','mult','div']:
+    operation = input('What calculation would you like to do? (add, sub, mult, div)\n')
 
 num_1 = int(input('What is number 1?'))
 num_2 = int(input('What is number 2?'))
