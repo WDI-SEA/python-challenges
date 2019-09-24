@@ -77,9 +77,9 @@ alphabetical order (ie. `hello` becomes `ehllo`), Assume numbers and punctuation
 symbols will not be included in the string.
 
 ```
-Give me a string to reverse
+Give me a string to alphabetize
 supercalifragilisticexpialidocious
-Reversed: aaacccdeefgiiiiiiillloopprrssstuux
+Alphabetized: aaacccdeefgiiiiiiillloopprrssstuux
 ```
 
 
