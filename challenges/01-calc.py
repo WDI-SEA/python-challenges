@@ -18,7 +18,16 @@
 # Your result is 9
 # ```
 
+operator = input('What action would you like to perform? ')
 num1 = int(input('Enter a number '))
 num2 = int(input('Enter another number '))
 
-print('Your result is', (num1 + num2))
+if operator == 'add':
+    print('Your result is', (num1 + num2))
+elif operator == 'subtract':
+    print('Your result is', (num1 - num2))
+elif operator == 'mult':
+    print('Your result is', (num1 * num2))
+elif operator == 'div':
+    print('Your result is', (num1 / num2))
+
