@@ -6,3 +6,18 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+print("Enter a string:")
+user_string = input()
+reverse_dict = []
+
+for char in user_string:
+  reverse_dict.append(char)
+
+reverse_dict.reverse()
+reverse = ""
+
+for char in reverse_dict:
+  reverse = reverse + char
+
+print(reverse)
