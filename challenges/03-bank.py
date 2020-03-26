@@ -1,6 +1,6 @@
 print("Welcome to Chase bank.")
-print("Have a nice day!")
 
+bal = 4000
 
 def deposit():
     amount = float(input('How much would you like to deposit?\n'))
@@ -11,7 +11,7 @@ def withdraw():
     return amount
 
 def balance():
-    bal = 4000
+    global bal
     print(f'Your current balance is\n {bal}')
     ans = input('What would you like to do? (deposit, withdraw, check_balance)\n')
     if (ans == 'deposit'):
@@ -25,8 +25,6 @@ def balance():
     elif (ans == 'check_balance'):
         print(f'Your current balance is {bal}')
    
-    
-
 
 balance()
 while (True):
@@ -36,3 +34,6 @@ while (True):
     elif (ans == 'yes'):
         print('Thank you!')
         break
+
+print("Have a nice day!")
+
