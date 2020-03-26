@@ -6,3 +6,13 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+user_string = input("Enter a string\n")
+n = len(user_string)
+i = n-1
+arr = ""
+while(i >= 0):
+	arr = arr + user_string[i]
+	i = i -1
+print(arr)
+
+
