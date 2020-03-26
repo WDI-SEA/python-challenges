@@ -1,50 +1,58 @@
 balance = 4000
 done = False
 
-
-def deposit():
+# increase balance by input value
+def deposit(balance):
     user_input = input("How much would you like to deposit? ")
-    global balance
     balance += int(user_input)
-    check_balance()
+    check_balance(balance)
+    return balance
 
-def withdraw():
+# decrease balance by input value
+def withdraw(balance):
     user_input = input("How much would you like to withdraw? ")
-    global balance
     balance -= int(user_input)
     if balance >= 0:
-        check_balance()
+        check_balance(balance)
     else:
         balance += int(user_input)
         print(f"Insufficient funds, you only have a balance of: {balance}")
-    balance += int(user_input)
+    return balance
     
-
-def check_balance():
+# print balance
+def check_balance(balance):
     print(f"Your balance is {balance}")
+    return balance
 
+# look up which function to call 
 actions = {
     "deposit": deposit,
     "withdraw": withdraw,
     "check_balance": check_balance
 }
 
-def transform(str):
-    str = str.lower()
-    str = str.strip()
-    return str
+# the keys in actions are lower case without spaces
+def transform(user_input):
+    user_input = user_input.lower()
+    user_input = user_input.strip()
+    return user_input
 
+# read instructions from user
 def get_user_action():
     action = transform(input("What would you like to do? (deposit, withdraw, check_balance)"))
     if action in actions:
-        print("Got it")
         return action
     else:
         return None
 
-def perform_user_action():
+# perform user reques
+def perform_user_action(balance):
     p_action = get_user_action()
-    actions[p_action]()
+    if p_action == None:
+        perform_user_action(balance)
+    else:
+        balance = actions[p_action](balance)
+    return balance
 
 def ask_if_done():
     user_input = input("Are you done?")
@@ -54,8 +62,9 @@ def ask_if_done():
 
 print("Welcome to Chase bank.")
 print("Have a nice day!")
-check_balance()
+check_balance(balance)
 
+# ask for input as long as user is not done
 while not done:
-    perform_user_action()
+    balance = perform_user_action(int(balance))
     done = ask_if_done()

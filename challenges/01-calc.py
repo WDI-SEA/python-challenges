@@ -28,7 +28,7 @@ def transform(str):
     return str
 
 def get_operator():
-    operator = input("What calculation would you like to do? (add, sub, mult, div) ")
+    operator = input("What calculation would you like to do? (add, sub, mul, div) ")
     operator = transform(operator)
     if operator in operators:
         return operator

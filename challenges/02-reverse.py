@@ -7,6 +7,14 @@
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
 
+def reverse(working_string):
+    return_string = ''
+    string_length = len(working_string)
+    for index in range(0, string_length):
+        return_string += working_string[string_length - index - 1]
+    return return_string
+
 user_input = input("Enter a string ")
 
-print(user_input[::-1])
+# print(user_input[::-1])
+print(reverse(user_input))
