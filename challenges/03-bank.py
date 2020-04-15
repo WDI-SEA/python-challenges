@@ -16,3 +16,20 @@ def banking():
     print("Hmm there seems to be a problem with your request.")
 banking()
 print("Have a nice day!")
+
+
+# in class comparison:
+
+# balance = 1000
+# done = "no"
+
+# # *lobal variables
+# def atm():
+#     global balance
+#     global done
+
+#     while( done != "yes" ):
+#         ans = input("What would you like to do? \n")
+
+#         if (ans == "deposit"):
+#             amount = int(input("How much would you like to deposit? \n"))
