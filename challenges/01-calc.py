@@ -26,10 +26,26 @@ operator={
 }
 
 def calculator():
-   operation= input('What would you like to do: press add, sub, mult, div\n')
-   num1 = float(input('Enter your first number '))
-   num2 = float(input('Enter your second number '))
-   result = operator[operation](num1, num2)
-   print(f'The result of {operation} is {result}')
+    operation= input('What would you like to do: press add, sub, mult, div\n')
+    num1 = None
+    num2 = None
+   
+
+    while not num1:
+        try: 
+            num1 = float(input('Enter your first number '))
+        except:
+             print('Bad value for first number')
+    while not num2:
+          try: 
+            num2 = float(input('Enter your second number '))
+          except:
+             print('Bad value for second number')
+
+    if operation in operator:   
+            result = operator[operation](num1, num2)
+            print(f'The result of {operation} is {result}')
+    else:
+        print("Wrong operator, you can only write: add, sub, mult, div to get the calculation")        
 
 calculator()

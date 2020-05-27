@@ -16,8 +16,19 @@ def reverseString(str):
       return var
   
    
-str = reverseString("ideh")
+str1 = reverseString("ideh")
 
 #reverseString("readme")
 
-print("reverse:",str)
+print("reverse:",str1)
+
+ 
+str2 = "".join(reversed("Hello Yello Pretty fellow"))
+print(str2)
+
+
+input = "hello world"
+result = ''
+for c in input:
+      result = c + result
+print(result)
