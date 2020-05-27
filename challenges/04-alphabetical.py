@@ -13,3 +13,7 @@ def sort_alphabetically():
     return sorted_list
 
 print(sort_alphabetically())
+
+
+str= "".join(sorted("I like 2345 @ python!!!"))
+print(str)
