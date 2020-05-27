@@ -6,3 +6,23 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+def rev_string(str):
+    result = ''
+    for x in range(len(str), 0, -1):
+        result += str[(x-1)]
+    print(result)
+     
+rev_string('door')
+
+def rever(word):
+    results = ''
+    for i in word:
+        results = i + results
+        print(i)
+        print(results)
+    print(results)
+
+rever('docks')
+
+
