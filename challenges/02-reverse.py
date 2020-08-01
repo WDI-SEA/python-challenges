@@ -14,6 +14,5 @@ str = []
 
 for i in phrase:
     str.insert(0, i)
-    
 
 print(str)
