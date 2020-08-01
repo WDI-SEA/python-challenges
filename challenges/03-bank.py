@@ -1,7 +1,8 @@
 print("Welcome to Chase bank.")
 
-balance = input('Your current balance is\n')
-current_balance = int(balance)
+current_balance = 0
+
+print(f'Your current balance is {current_balance}')
 
 def bank_interaction(current_balance):
     print("what would you like to do? (deposit, withdraw, check_balance")
@@ -10,6 +11,7 @@ def bank_interaction(current_balance):
         print('How much would you like to deposit')
         deposit_added = input()
         print(f'Your new total is {int(current_balance) + int(deposit_added)}')
+        return current_balance == int(current_balance) + int(deposit_added)
     if option == 'withdraw':
         print('How much would you like to withdraw')
         deposit_subtracted = input()
@@ -19,12 +21,11 @@ def bank_interaction(current_balance):
 
 bank_interaction(current_balance)
 
-print("Are you done?")
+print("Are you done? (yes or no)")
 answer = input()
 
 if answer == 'yes':
     print("Have a nice day!")
 elif answer == 'no':
     print(f'current balance is: {current_balance}')
-    print(f'balance is: {balance}')
     bank_interaction(current_balance = current_balance)
