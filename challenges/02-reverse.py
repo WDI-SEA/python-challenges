@@ -6,3 +6,11 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+string = "python"
+reversed_str = ""
+index = len(string)
+
+while index > 0:
+  reversed_str += string[index - 1]
+  index -= 1
+print(reversed_str)
