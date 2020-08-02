@@ -4,9 +4,13 @@
 
 print('Gimme a string to alphabetize')
 
-alphabetize = input()
+phrase = input()
 
 
+def alphabetized():
+    str = sorted(phrase)
+    print(str)
 
-print(alphabetize)
+alphabetized()
+
 
