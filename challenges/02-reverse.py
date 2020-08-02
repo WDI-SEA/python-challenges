@@ -8,4 +8,10 @@
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
 
 
+def string_reverse(string):
+  new_string = ""
+  for letter in string:
+    new_string = letter + new_string
+  return new_string
 
+print(string_reverse("Joshua Danao"))
