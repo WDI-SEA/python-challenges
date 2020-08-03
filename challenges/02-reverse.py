@@ -6,3 +6,11 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+testList = [1, 2, 3, 4, 5, 6, 7, 8]
+    testList.reverse()
+print(testList)
+
+for testList in reversed([1, 2, 3, 4, 5, 6, 7, 8]): print(testList)
+
+# testList[::-1]
