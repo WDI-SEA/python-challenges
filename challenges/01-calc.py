@@ -20,15 +20,15 @@ def div(x,y):
     return x/y
 
 #main function 
-print("What calulation would you like to do?")
+print("What calulation would you like to do?\n")
 print ("add | sub | mult | div")
 
 while True:
     choice = input("Enter your choice: ")
     # check the choice 
     if choice in ("add", "sub", "mult", "div"):
-        num1 = float(input("What is your number 1?"))
-        num2 = float(input("What is your number 2?"))
+        num1 = int(input("What is your number 1?"))
+        num2 = int(input("What is your number 2?"))
 
         if choice == "add":
             print("Your result is ", add(num1,num2))
