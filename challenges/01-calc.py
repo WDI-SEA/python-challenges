@@ -1,5 +1,5 @@
 1# user prompt
-operator = raw_input("What calculation would you like to do: add, sub, mult, div? ")
+operator = input("What calculation would you like to do: add, sub, mult, div? ")
 
 # first number prompt
 first = int(input("whats the first number that will be used for this calculation? "))
