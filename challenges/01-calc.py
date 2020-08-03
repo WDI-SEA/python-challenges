@@ -17,9 +17,8 @@ def calculator():
     answer = x / y
   elif method == "multiply":
     answer = x * y 
-  else: 
-    ()
   
   print(f"The answer is {answer}")
 
 calculator()
+

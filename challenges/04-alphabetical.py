@@ -12,5 +12,4 @@ def alphabetize(string):
       new_string = new_string + letter
     return new_string
 
-
 print(alphabetize("ilikemakingsmoothiesinthemorning"))
