@@ -1,4 +1,4 @@
-1# user prompt
+# user prompt
 operator = input("What calculation would you like to do: add, sub, mult, div? ")
 
 # first number prompt
