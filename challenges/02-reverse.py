@@ -6,3 +6,17 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+string = input("Enter a string to reverse: ")
+def split(string):
+    return list(string)
+string2 = split(string)
+string2.reverse()
+result = "".join(string2)
+print(result)
+
+"""
+OUTPUT
+------
+Enter a string to reverse: hello world
+dlrow olleh
+"""
