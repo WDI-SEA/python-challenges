@@ -5,10 +5,10 @@
 
 def calc():
   # info messgae
-  print('I can do the following maths for you: addition, subtraction, multiplacation or division.\nPlease entera add, sub, mult, div to do a math!')
+  print('I can do the following maths for you: addition, subtraction, multiplacation or division.\nPlease enter add, sub, mult, div to do a math!')
 
   # get math type and remove whitespace
-  math = input('please select a math:')
+  math = input(':')
   math = math.strip()
 
   # get numbers and restart on bad inputs
