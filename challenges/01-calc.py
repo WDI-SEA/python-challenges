@@ -2,3 +2,20 @@
 # input() always returns a string value. If you ever want someone
 # to enter a number you have to use the `int()` function to convert
 # what they typed in to a string.
+# Calc
+operator = input('What action would you like to perform? ')
+num1 = int(input('What is the first number? '))
+num2 = int(input('What is the second number? '))
+result = 'Bad operator?'
+
+if operator == 'add':
+    result = num1 + num2
+elif operator == 'sub':
+    result = num1 - num2
+elif operator == 'div':
+    result = num1 / num2
+elif operator == 'mult':
+    result = num1 * num2
+
+print(f'Your result was {result}!')
+© 2020 GitHub, Inc.
