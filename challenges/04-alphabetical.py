@@ -3,4 +3,6 @@
 # lists and strings instead.
 user_string = input("Enter a random series of letters to be alphabetized: ")
 
-"".join(sorted(user_string))
+alpha_user_string = sorted(user_string)
+
+print(alpha_user_string)
