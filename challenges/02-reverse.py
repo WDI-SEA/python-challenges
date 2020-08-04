@@ -6,3 +6,13 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+def reversed_string():
+    print('enter any text and watch what happens')
+    string = input('Type away pal')
+    string = list(string)
+    rev_string = ''
+    for letter in reversed(string):
+        rev_string += letter
+        print(rev_string)
+    print('there you have it')
+reversed_string()
