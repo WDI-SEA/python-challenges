@@ -23,7 +23,7 @@ What is number 2?
 Your result is 9
 ```
 
-Bonus: tell the user if the operation they entered isn't one of the valid choices.
+**Bonus**: tell the user if the operation they entered isn't one of the valid choices.
 
 ### Challenge 2 - Reverse a string
 
