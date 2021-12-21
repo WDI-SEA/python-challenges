@@ -4,9 +4,9 @@
 # what they typed in to a string.
 
 question = input(
-    "What calculation would you like to do? (add, sub, mult, div) ")
-num1 = int(input('Whats is your first number? '))
-num2 = int(input('What is Your Second Number? '))
+    "What calculation would you like to do? (add, sub, mult, div)\n")
+num1 = int(input("Whats is your first number? \n"))
+num2 = int(input("What is Your Second Number? \n"))
 
 if (question.lower() == 'add'):
     print("Your result is", num1 + num2)
