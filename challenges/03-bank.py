@@ -31,28 +31,46 @@
 
 
 # ```
-print("Welcome to Chase bank.")
+# print("Welcome to Chase bank.")
 
+# balance = 4000
+
+# use_whattodo = input("What would you like to do? ")
+# # print(use_whattodo)
+
+# use_deposit = int(input("How much would you like to deposit? "))
+# print(use_whattodo)
+
+# use_withdraw = int(input("How much would you like to withdraw? "))
+# # print(use_withdraw)
+
+# if use_whattodo == "check balance":
+#     print(f"Your balance is: {balance} ")
+# elif use_howmuchdepo == "deposit":
+#      print(f"You deposited: ({use_deposit})")
+# elif use_withdraw == "withdraw":
+#     print(f"You withdrew: ({use_withdraw})")
+
+# print("Have a nice day!")
+transaction = True
 balance = 4000
 
-use_whattodo = input("What would you like to do? ")
-print(use_whattodo)
-if use_whattodo == "check balance":
+print("Welcome to Chase bank.")
+
+while transaction == True:
     print(f"Your balance is: {balance} ")
-elif use_howmuchdepo == "deposit":
-     use_howmuchdepo == int(input("How much would you like to deposit?"))
-     print(f"You deposited: ({use_howmuchdepo})")
+    transaction = (input("What would you like to do? deposit or withdraw ?"))
 
-# use_howmuchdepo = int(input("How much would you like to deposit?")
-
-# if use_whattodo == 'deposit':
-#     print(use_howmuchdepo)
-    
-   
-
-
-# use_areyoudone = input("Are you done?")
-# print(use_areyoudone)
+if transaction == "deposit":
+    amount = int(input("How much would you like to deposit?:"))
+    balance = balance + amount
+    print(f" Your balance is now {balance}")
+elif transaction == "withdraw":
+    amount = int(input("How much would you like to withdraw?:"))
+    balance = balance - amount
+    print(f" Your balance is now {balance}")
+else:
+    print("Have a nice day!")
 
 
 
