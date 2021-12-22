@@ -3,6 +3,7 @@
 # lists and strings instead.
 
 string = input('Give me a string to alphabetize:\n')
+input = ''
 
 letters = sorted(string)
 string = "".join(letters)
