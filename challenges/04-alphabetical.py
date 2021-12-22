@@ -3,7 +3,7 @@
 # lists and strings instead.
 
 def alphabatize(str):
-    split = sorted(list(str))
+    split = sorted(str)
     print(''.join(split))
 
 alphabatize('hello')

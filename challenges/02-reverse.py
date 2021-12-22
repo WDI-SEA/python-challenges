@@ -9,10 +9,9 @@
 
 reverse = ''
 
-def reverse_me(str):
-    for letter in str:
-        print(letter)
-        # reverse.insert(0, letter)
-    # print(reverse)
+def reversify(str):
+    split = list(str)
+    split.reverse()
+    print(''.join(split))
 
-reverse_me('switcharoo')
+reversify('switcharoo')
