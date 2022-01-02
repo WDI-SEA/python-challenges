@@ -7,7 +7,8 @@
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
 
-string = "Python"
-# slice notation
-reverse_string= string[::-1]
-print(reverse_string)
+string = input('Enter a string:\n')
+result = ''
+for i in string:
+    result = i + result
+print(result)
