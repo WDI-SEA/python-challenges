@@ -6,3 +6,18 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+def reverse(str):
+  temp = list(str)
+  i = len(temp) - 1
+  k = 0
+  reversed = ['']
+  while i >= 0:
+    reversed.insert(k, temp[i])
+    i-=1
+    k+=1
+    x = ''.join(reversed)
+  return x
+
+
+print(reverse('Roman'))
