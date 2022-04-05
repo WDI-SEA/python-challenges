@@ -3,7 +3,7 @@
 # to enter a number you have to use the `int()` function to convert
 # what they typed in to a string.
 
-process = input('What calculation would you like to do? (add, sub, mult, div) :')
+process = input('What calculation would you like to do? (add, sub, mult, div) : ')
 process_list = ('add', 'sub', 'mult', 'div')
 
 while not process in process_list:
@@ -12,8 +12,13 @@ while not process in process_list:
     else:
         process = input('You made an inavlid selection. Please choose : add, sub, mult, div : ')
 
-num_one = input('Please, enter a number : ')
-num_two = input('Please, enter a second number :')
+num_one = input('Please, enter a number : \n')
+while not num_one.isnumeric():
+    num_one = input('Invalid input. Please enter a number :\n')
+
+num_two = input('Please, enter a second number :  \n')
+while not num_two.isnumeric():
+    num_two = input('Invalid input. Please enter a second number :\n')
 
 def add_numbers(first_num, second_num):
     sum = int(first_num) + int(second_num)
