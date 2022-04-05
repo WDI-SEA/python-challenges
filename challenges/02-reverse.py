@@ -6,3 +6,29 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+
+txt = 'Hello World'[::-1]
+print(txt)
+
+def my_function(x):
+    return x[::-1]
+
+mytxt = my_function('I wonder what this looks like backwards')
+
+print(mytxt)
+
+a = 'chompawonka'
+a_list = list(a)
+a_list.reverse()
+a_rev = " ".join(a)
+print(a_rev)
+
+b = 'chompawonka'
+b_rev = ""
+for i in b:
+    b_rev=i + a_rev
+print(a_rev)
+
+
+
