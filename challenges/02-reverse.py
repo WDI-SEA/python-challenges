@@ -6,3 +6,10 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+def reverser(str):
+    reversed = ''
+    for letters in str[::-1]:
+        reversed += letters
+    return reversed
+
+print(reverser('whatup'))
