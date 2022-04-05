@@ -2,8 +2,6 @@ from multiprocessing.dummy import current_process
 
 
 print("Welcome to Chase bank.")
-print("Have a nice day!")
-
 
 user_done = False
 current_balance = 4000
