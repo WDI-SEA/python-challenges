@@ -1,6 +1,4 @@
 
-
-
 a_string = input("please enter a string: ")
 an_array = list(a_string)
 new_array = []

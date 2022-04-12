@@ -1,3 +1,9 @@
-# You'll need to use a couple of built in functions to alphabetize a string. 
-# Try to avoid looking up the exact answer and look at built in functions for
-# lists and strings instead.
+a_string = input("please enter a word: ")
+an_array = list(a_string)
+new_array = []
+for char in an_array:
+    new_array.append(char)
+    listToStr = (''.join(map(str, new_array)))
+    sorted_word = sorted(listToStr)
+    join_the_sorted_word = (''.join(map(str, sorted_word)))
+print(join_the_sorted_word )
