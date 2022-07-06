@@ -6,3 +6,18 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+# Enter a string:
+# reverse_me
+# em_esrever
+
+
+
+def reverse_string(str):
+    reverse = ''
+    for letter in str:
+        # print(letter)
+        reverse = letter + reverse
+    return reverse
+
+print(reverse_string('hello'))
