@@ -3,26 +3,26 @@
 # to enter a number you have to use the `int()` function to convert
 # what they typed in to a string.
 
-def calc():
-    operation = input("What calculation would you like to do? (add, sub, mult, div)\n")
-    num1 = input("What is number 1?\n")
-    num2 = input("What is number 2?\n")
+# def calc():
+#     operation = input("What calculation would you like to do? (add, sub, mult, div)\n")
+#     num1 = input("What is number 1?\n")
+#     num2 = input("What is number 2?\n")
 
 
-    if(operation == "add"):
-        result = int(num1) + int(num2)
-    elif(operation == "sub"):
-        result = int(num1) - int(num2)
-    elif(operation == "mult"):
-        result = int(num1) * int(num2)
-    elif(operation == "div"):
-        result = int(num1) / int(num2)
-    else:
-        result = "nothing because you did not choose a valid operation"
+#     if(operation == "add"):
+#         result = int(num1) + int(num2)
+#     elif(operation == "sub"):
+#         result = int(num1) - int(num2)
+#     elif(operation == "mult"):
+#         result = int(num1) * int(num2)
+#     elif(operation == "div"):
+#         result = int(num1) / int(num2)
+#     else:
+#         result = "nothing because you did not choose a valid operation"
 
-    print("Your result is", result)
+#     print("Your result is", result)
 
-calc()
+# calc()
 
 def calc():
     operation = input("What calculation would you like to do? (add, sub, mult, div)\n")
@@ -37,6 +37,8 @@ def calc():
     }
 
     if(operation in methods):
-        print
+        return methods[operation]
+    else:
+        return print("That's not good math. Try again!")
 
-calc()
+print(calc())
