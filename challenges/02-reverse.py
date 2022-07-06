@@ -6,3 +6,18 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+def reverse(string):
+    new_string = ''
+    new_arr = list(string)
+    final_arr = []
+    while(len(new_arr) > 0):
+        letter = new_arr.pop()
+        final_arr.append(letter)
+
+
+    u = ''.join(final_arr)
+    print(u)
+    print((final_arr))
+
+reverse('hi')
