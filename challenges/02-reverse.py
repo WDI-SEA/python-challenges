@@ -15,3 +15,13 @@ def reverseString(inputString):
     return inputString
 
 print(reverseString(inputString))
+
+# second solution method
+
+def reverse_str(str):
+    rev_word = ""
+    for letter in str:
+        rev_word = letter + rev_word
+    return rev_word
+
+print(reverse_str("hello"))
