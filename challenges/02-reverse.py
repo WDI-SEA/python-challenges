@@ -6,3 +6,14 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+
+def rev_string (txt):
+    new_string = ""
+    for letters in txt:
+        new_string = letters + new_string
+
+    return new_string
+
+print(rev_string("Hello World"))
+
