@@ -6,3 +6,18 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+word = input('Enter word:')
+
+def reverse_iter(string):
+    if len(string) == 0:
+        print(string)
+        return string
+    else:
+        new_string = ""
+        for i in range(len(string)):
+            new_string += string[len(string)-i-1]
+            print(new_string)
+        return new_string
+
+reverse_iter(word)
