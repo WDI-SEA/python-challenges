@@ -5,16 +5,16 @@ balance = 4000
 
 def bank_action():
     global balance
-    user_choice = input('What would you like to do? (deposit, withdraw, check_balance): ')
+    user_choice = input('What would you like to do? (deposit, withdraw, check_balance): \n')
     # global user_choice
     if user_choice == 'deposit':
-        deposit = int(input('Please enter the amount you\'d like to deposit: '))
+        deposit = int(input('Please enter the amount you\'d like to deposit: \n'))
         balance += deposit
         print(f'Your balance after depositing is {balance}')
         # continue_banking()
         return balance
     elif user_choice == 'withdraw':
-        withdraw = int(input('Please enter the amount you\'d like to withdraw: '))
+        withdraw = int(input('Please enter the amount you\'d like to withdraw: \n'))
         balance -=  withdraw
         print(f'Your balance after withdrawing is {balance}')
         # continue_banking()
@@ -28,7 +28,7 @@ def bank_action():
 
 bank_action()
 
-continue_banking = input('Can we assist you with anything else? (yes/no): ')
+continue_banking = input('Can we assist you with anything else? (yes/no): \n')
 if continue_banking == 'no':
     print('Have a great day!')
 elif continue_banking == 'yes':

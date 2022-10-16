@@ -5,7 +5,7 @@
 # print(dir(list))
 # print(dir(str))
 
-string = input('Please enter a string to sort in alphabetic order!: ')
+string = input('Please enter a string to sort in alphabetic order!: \n')
 print(string)
 alphabetic = sorted(string.lower())
 # print(alphabetic)

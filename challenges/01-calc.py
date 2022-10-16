@@ -6,11 +6,11 @@
 from ast import Num
 
 
-user_selection = input('What operation would you like to perform? (add, sub, mult, div): ')
+user_selection = input('What operation would you like to perform? (add, sub, mult, div): \n')
 print(user_selection)
-num_one = int(input('What is the first number?: '))
+num_one = int(input('What is the first number?: \n'))
 print(num_one)
-num_two = int(input('What is the second number?: '))
+num_two = int(input('What is the second number?: \n'))
 print(num_two)
 
 def calculate(num_one, num_two):
