@@ -32,7 +32,7 @@ def reverse_string():
 
 def bank_account():
     current_balance = 0
-    operation = input('What would you like to do? (deposit, withdraw, check_balance) \n')
+    operation = input('What would you like to do? (deposit, withdraw, check balance) \n')
     if operation == 'deposit':
         deposit = input('How much would you like to deposit? \n')
         current_balance += int(deposit)
