@@ -6,7 +6,7 @@
 string = input("Give me a string to alphabetize:\n")
 sorted_list = sorted(string)
 string_alphabetized = "".join(sorted_list)
-print("Alphabetized:", string_alphabetized
+print("Alphabetized:", string_alphabetized)
 
 
 
