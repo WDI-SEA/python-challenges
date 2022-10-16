@@ -7,7 +7,7 @@
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
 
-user_string = input("Enter a string to reverse: ")
+user_string = input("Enter a string to reverse:\n")
 letter_list = []
 for letter in user_string:
     letter_list.append(letter)

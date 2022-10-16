@@ -4,9 +4,9 @@
 # what they typed in to a string.
 
 print("Math time")
-operation = input("What would you like to do? (add, sub, mult, div) ")
-num_one = input("First number? ")
-num_two = input("Second number? ")
+operation = input("What would you like to do? (add, sub, mult, div)\n")
+num_one = input("First number?\n")
+num_two = input("Second number?\n")
 if operation == "add":
     result = int(num_one) + int(num_two)
     print(f"The result is {result}")
