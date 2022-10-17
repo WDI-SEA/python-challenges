@@ -7,10 +7,17 @@
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
 
-string = 'potato baby'
+# string = 'potato baby'
 
-def reverse():
-    global string 
-    print(string[::-1])
+# def reverse():
+#     global string 
+#     print(string[::-1])
 
-reverse()
+# reverse()
+
+def reverse(string):
+    string = "".join(reversed(string))
+    return string
+  
+string2 = "different approach"
+print(reverse(string2))
