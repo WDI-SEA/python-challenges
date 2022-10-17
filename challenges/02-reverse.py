@@ -10,11 +10,11 @@
 # STRING REVERSE
 string_one = [5, 4, 3, 2, 1]
 string_one.reverse()
-# print(string_one)
+print(string_one)
 
 # ITERATE THROUGH LOOP-
 string_two = [10,20,30,40]
-# for element in reversed([10,20, 30] ): print(element)
+for element in reversed([10,20, 30] ): print(element)
 
 # REVERSE LINE
 # string_three ="killer bunny"
@@ -26,3 +26,25 @@ string_two = [10,20,30,40]
 
 user_string =input("enter a string ")
 for letter in reversed(user_string): print(letter)
+
+
+# ================== review answers ====================
+#  while loop
+should_run = True
+
+while should_run:
+    print("hello give me a string. enter q to quit")
+    string = input (">")
+
+    new_string=""
+
+    if string == "q":
+        should_run = False
+
+
+    for char in string:
+        new_string = char + new_string
+
+    print(new_string)
+
+# while loo

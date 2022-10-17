@@ -7,9 +7,9 @@ from ast import operator
 from importlib.resources import open_binary
 
 
-num_one = int(input("enter first number"))
-num_two = int(input("enter second number"))
-operator = input("choose your operator")
+# num_one = int(input("enter first number"))
+# num_two = int(input("enter second number"))
+# operator = input("choose your operator")
 
 def calculate():
     if operator == "+":
@@ -21,4 +21,36 @@ def calculate():
     elif operator == "/":
         print (num_one / num_two)
 
-calculate()
+# calculate()
+
+# ========================review answers=====================================
+# print user prompt
+prompt = ">"
+print("Enter function: add, sub, mult, div")
+math = input(prompt)
+print(f"given math {math}")
+
+# get input and store the math they would like to do and store #s
+print("Enter first num")
+num_one = int(input(prompt))
+print("Enter your second num")
+num_two = int(input(prompt))
+
+print(f"input user data: math {math}, num 1 {num_one}, num 2 {num_two}")
+
+
+# perform math equation based on user input
+# using a dictionary
+operations ={
+    "add": num_one + num_two,
+    "sub": num_one - num_two,
+    "mult": num_one * num_two,
+    "div": num_one / num_two,
+}
+
+if math in operations:
+    print(f"result {operations[math]}")
+else:
+    print(f"{math} is not a valid math")
+# display result
+
