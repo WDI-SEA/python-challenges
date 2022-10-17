@@ -7,11 +7,31 @@
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
 
-def reverse_string(string): 
-    new_string = ""
-    for letter in string:
-        new_string = letter + new_string
+# def reverse_string(string): 
+#     new_string = ""
+#     for letter in string:
+#         new_string = letter + new_string
 
-    return new_string
+#     return new_string
 
-print(reverse_string("hello"))
+# print(reverse_string("hello"))
+
+print("Hello user, give me a string")
+
+string = input('')
+string = 'taco'
+
+new_string = ''
+
+for char in string:
+    new_string = char + new_string
+
+print(new_string)
+
+# should_run = True
+
+# while should_run:
+#    print("Hello user, give me a string")
+#     string = input ('- ')
+
+#     if string == "q"
