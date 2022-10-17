@@ -7,8 +7,14 @@
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
 
+print('Hello user, give me a string')
 
+# you can put anything instead of the > symbol below
+string = input('> ')
 
-string = "".join(reversed(str))
-def reversedString(str):
-    reversed = ''
+new_string = ''
+
+for char in string:
+    new_string = char + new_string
+
+print(new_string)
