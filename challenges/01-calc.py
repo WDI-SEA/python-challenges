@@ -7,13 +7,7 @@ import sys
 calc_type = input('What calculation would you like to do? (add | sub | mult | div)')
 
 match calc_type:
-  case 'add':
-    pass
-  case 'sub':
-    pass
-  case 'mult':
-    pass
-  case 'div':
+  case 'add' | 'sub' | 'mult' | 'div':
     pass
   case _:
     print('Calculation must match one of the following words: add, sub, mult, or div')
