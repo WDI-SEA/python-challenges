@@ -2,11 +2,6 @@
 # Try to avoid looking up the exact answer and look at built in functions for
 # lists and strings instead.
 
-def sorted():
-  str = input('Give me a string to alphabetize\n')
-  str_list = list(str)  
-  str_list.sort()
-  output = ''.join(str_list)
-  print(output)
 
-sorted()
+str = input('Give me a string to alphabetize\n')
+print(''.join(sorted(str)))
