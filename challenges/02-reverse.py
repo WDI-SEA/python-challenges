@@ -6,3 +6,21 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+# string = "This will be reversed" [::-1]
+
+# print(string)
+
+###CLASS REVIEW
+
+string = "Drink some coffee"
+
+#blank string
+blank_str =""
+
+#iterate given string
+for char in string:
+    #as we iterate, put the current char at the beginning of the blank string
+    blank_str = char + blank_str
+
+print(blank_str)
