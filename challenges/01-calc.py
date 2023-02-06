@@ -9,9 +9,9 @@ print('Welcome to calculator!')
 while is_running:
     calc = input('What kind of calculation would you like to do? (add, subtract, multiply, divide)\n> ')
 
-    first_num = int(input(f'Okay great, so you want to {calc} some numbers. What\'s the first number?\n> '))
+    first_num = float(input(f'Okay great, so you want to {calc} some numbers. What\'s the first number?\n> '))
 
-    second_num = int(input(f'Gotcha, {first_num}. What\'s the second number?\n> '))
+    second_num = float(input(f'Gotcha, {first_num}. What\'s the second number?\n> '))
 
     if calc == "add":
         add_result = (first_num + second_num)

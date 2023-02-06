@@ -2,7 +2,7 @@
 # Try to avoid looking up the exact answer and look at built in functions for
 # lists and strings instead.
 
-user_word = input('Type a word you want to see alphabetically:\n')
+user_word = input('Type a word you want to see alphabetically:\n> ')
 
 def alphabetize(word):
     alphabetized_word = ''
