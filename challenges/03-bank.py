@@ -26,6 +26,30 @@
 # yes
 # Thank you!
 
+
 print("Welcome to Chase bank.")
-print("Have a nice day!")
+balance = int(input('your current balance is '))
+# print('your current balance is ', balance)
+action = input('Would you like to display your balance, withdraw, or deposit (please enter - balance, withdraw, deposit)?  ')
+# firstnum = int(input('What is your first number?  '))
+# secondnum = int(input('What is your second number?  '))
+def bank_action(action):
+    if action.lower() not in ('balance', 'withdraw', 'deposit'):
+        print('sorry, response invalid, please choose a proper action')
+    elif (action == 'balance'):
+        print('your current balance is ', balance)
+        
+    elif (action == 'withdraw'):
+        how_much = int(input('how much would you like to withdraw?  '))
+        print('your current balance is ', balance - how_much) 
+        
+    else:
+        how_much = int(input('how much would you like to deposit?  '))
+        print('your current balance is ', balance + how_much) 
+        
+
+
+
+
+print("Have a nice day!", bank_action(action))
 

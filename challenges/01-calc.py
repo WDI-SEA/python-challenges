@@ -21,7 +21,9 @@ firstnum = int(input('What is your first number?  '))
 secondnum = int(input('What is your second number?  '))
 
 def calculator(meth, first, second):
-    if (meth == 'add'):
+    if meth.lower() not in ('add', 'sub', 'mult', 'div'):
+        print('sorry, response invalid, please choose a proper method')
+    elif (meth == 'add'):
         return first + second
     elif (meth == 'sub'):
         return first - second

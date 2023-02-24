@@ -12,3 +12,15 @@
 # Alphabetized: aaacccdeefgiiiiiiillloopprrssstuux
 # ```
 
+alpha_string = ''
+
+def alpha_it(str):
+
+    sorted_str = sorted(str)
+    print(sorted_str)
+    sorted_str.replace(',','')
+
+    print(sorted_str)
+
+
+alpha_it('yesnomaybeso')
