@@ -18,9 +18,9 @@ def alpha_it(str):
 
     sorted_str = sorted(str)
     print(sorted_str)
-    sorted_str.replace(',','')
+    alpha_string = ''.join(sorted_str)
 
-    print(sorted_str)
+    print(alpha_string)
 
 
-alpha_it('yesnomaybeso')
+alpha_it('supercalifragilisticexpialidocious')
