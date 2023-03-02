@@ -6,3 +6,20 @@
 # several ways to reverse a string, and it's a good read!
 #
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
+
+
+# string = list("potpaL deirraM I")
+# string.reverse()
+# reversed_string = "".join(string)
+# print(reversed_string) # Output: "I am married to Laptop"
+
+
+
+string = input(" Enter the string to reverse")
+
+reversed_string = ""
+
+for i in range(len(string)):
+    reversed_string += string[len(string)-i-1]
+
+print(reversed_string)
