@@ -6,6 +6,5 @@
 string = input('Please enter a string to sort in alphabetical order!: \n')
 print(string)
 alphabetic = sorted(string.lower())
-# print(alphabetic)
 str = ''
 print(str .join(alphabetic))
