@@ -3,9 +3,15 @@
 # lists and strings instead.
 
 word = input("Enter a word to alphabetize.")
-
+# sorted function approach
 alpha = ""
 for letters in sorted(word):
     alpha += letters
 
 print(alpha)
+
+# convert to list approach
+word_list = list(word)
+word_list.sort()
+string = "".join(word_list)
+print(string)

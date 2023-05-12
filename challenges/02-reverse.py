@@ -14,5 +14,14 @@ def reverse_word(word):
     for letter in reversed(word):
         drow += letter
     print(drow)
+    print("".join(reversed(word)))
 
 reverse_word(word)
+
+# python slice syntax (works on lists or strings)
+my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# [slice start (default 0): slice end (default end of list): step (default 1)]
+my_list_copy = my_list[::] # make a copy with defaults
+print(my_list[::-1])
+
+print(word[::-1])
