@@ -5,8 +5,8 @@
 
 def calculator():
     operation = input("Which calculation would you like to do? (add, sub, mult, div) ")
-    num1 = int(input("what is number 1? "))
-    num2 = int(input("what is number 2? "))
+    num1 = float(input("what is number 1? "))
+    num2 = float(input("what is number 2? "))
 
     if operation == 'add':
         result = num1 + num2
