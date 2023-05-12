@@ -3,10 +3,12 @@
 # lists and strings instead.
 
 def alphabetize(str):
-    sorted_str = sorted(str)
+    # sorted_str = sorted(str)
     
-    stringified = ''.join(sorted_str)
+    # stringified = ''.join(sorted_str)
 
-    return stringified
+    # return stringified
+
+    return ''.join(sorted(str))
 
 print(alphabetize("supercalifragilisticexpialidocious"))
