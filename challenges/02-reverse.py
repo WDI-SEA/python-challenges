@@ -11,8 +11,7 @@ reversed_string = string[::-1]
 print (reversed_string)
 
 string="cucumber"
-reversed_string = "".join(reversed(string))
-print(reversed_string)
+print("".join(reversed(string)))
 
 string= "hello world"
 reversed_string = ""
